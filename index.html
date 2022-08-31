@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/article_bricks.css">
+
+    <script defer src="js/strings.js"></script>
+    <script defer src="js/article_generator.js"></script>
 </head>
 <body>
 
@@ -24,146 +27,48 @@
 </header>
 
 <div class="article_bricks_container">
-    <article class="brick">
-            <div class="image">
-                <img src="https://preview.colorlib.com/theme/philosophy/images/thumbs/masonry/xlamp-400.jpg.pagespeed.ic.e7d0bUK4HD.webp"
-                     alt=""/>
-            </div>
-        <a href="to the article whereever it is">
-            <div class="text">
-                <div class="date">
-                    December 15, 2017
-                </div>
-                <div class="title">
-                    <h1>Just a Standard Format Post</h1>
-                </div>
-                <div class="desc">
-                    <p>
-                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident
-                        dolor
-                        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in
-                        aliqua...
-                    </p>
-                </div>
-                <div class="tags">
-                    <a href="">Design</a>
-                    <a href="">Photography</a>
-                </div>
-            </div>
-        </a>
-    </article>
-    <article class="brick">
-        <a href="to the article whereever it is">
-            <div class="image">
-                <img src="https://preview.colorlib.com/theme/philosophy/images/thumbs/masonry/xlamp-400.jpg.pagespeed.ic.e7d0bUK4HD.webp"
-                     alt=""/>
-            </div>
-            <div class="text">
-                <div class="date">
-                    December 15, 2017
-                </div>
-                <div class="title">
-                    <h1>Just another Standard Format Post</h1>
-                </div>
-                <div class="desc">
-                    <p>
-                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident
-                        dolor
-                        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in
-                        aliqua...
-                    </p>
-                </div>
-                <div class="tags">
-                    <a href="">Design</a>
-                    <a href="">Photography</a>
-                </div>
-            </div>
-        </a>
-    </article>
-    <article class="brick">
-        <a href="to the article whereever it is">
-            <div class="image">
-                <img src="https://preview.colorlib.com/theme/philosophy/images/thumbs/masonry/xlamp-400.jpg.pagespeed.ic.e7d0bUK4HD.webp"
-                     alt=""/>
-            </div>
-            <div class="text">
-                <div class="date">
-                    December 15, 2017
-                </div>
-                <div class="title">
-                    <h1>Just another Standard Format Post</h1>
-                </div>
-                <div class="desc">
-                    <p>
-                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident
-                        dolor
-                        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in
-                        aliqua...
-                    </p>
-                </div>
-                <div class="tags">
-                    <a href="">Design</a>
-                    <a href="">Photography</a>
-                </div>
-            </div>
-        </a>
-    </article>
-    <article class="brick">
-        <a href="to the article whereever it is">
-            <div class="image">
-                <img src="https://preview.colorlib.com/theme/philosophy/images/thumbs/masonry/xlamp-400.jpg.pagespeed.ic.e7d0bUK4HD.webp"
-                     alt=""/>
-            </div>
-            <div class="text">
-                <div class="date">
-                    December 15, 2017
-                </div>
-                <div class="title">
-                    <h1>Just another Standard Format Post</h1>
-                </div>
-                <div class="desc">
-                    <p>
-                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident
-                        dolor
-                        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in
-                        aliqua...
-                    </p>
-                </div>
-                <div class="tags">
-                    <a href="">Design</a>
-                    <a href="">Photography</a>
-                </div>
-            </div>
-        </a>
-    </article>
-    <article class="brick">
-        <a href="to the article whereever it is">
-            <div class="image">
-                <img src="https://preview.colorlib.com/theme/philosophy/images/thumbs/masonry/xlamp-400.jpg.pagespeed.ic.e7d0bUK4HD.webp"
-                     alt=""/>
-            </div>
-            <div class="text">
-                <div class="date">
-                    December 15, 2017
-                </div>
-                <div class="title">
-                    <h1>Just another Standard Format Post</h1>
-                </div>
-                <div class="desc">
-                    <p>
-                        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident
-                        dolor
-                        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in
-                        aliqua...
-                    </p>
-                </div>
-                <div class="tags">
-                    <a href="">Design</a>
-                    <a href="">Photography</a>
-                </div>
-            </div>
-        </a>
-    </article>
+    <article-card title="Titles" date="31 August 22" tags="Science, Math"
+                  href="Categories/Demo_Category/0001/article.html"
+                  image="Categories/Demo_Category/0001/card.png">
+        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor
+        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+    </article-card>
+    <article-card title="Maps" date="31 August 22" tags="Science, Math"
+                  href="Categories/Demo_Category/0002/article.html"
+                  image="Categories/Demo_Category/0002/card.png">
+        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor
+        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+    </article-card>
+    <article-card title="Craft" date="31 August 22" tags="Science, Math"
+                  href="Categories/Demo_Category/0003/article.html"
+                  image="Categories/Demo_Category/0003/card.png">
+        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor
+        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+    </article-card>
+    <article-card title="Scissors" date="31 August 22" tags="Science, Math"
+                  href="Categories/Demo_Category/0004/article.html"
+                  image="Categories/Demo_Category/0004/card.png">
+        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor
+        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+    </article-card>
+    <article-card title="Oregano" date="31 August 22" tags="Science, Math"
+                  href="Categories/Demo_Category/0005/article.html"
+                  image="Categories/Demo_Category/0005/card.png">
+        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor
+        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+    </article-card>
+    <article-card title="Pizza" date="31 August 22" tags="Science, Math"
+                  href="Categories/Demo_Category/0006/article.html"
+                  image="Categories/Demo_Category/0006/card.png">
+        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor
+        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+    </article-card>
+    <article-card title="Pineorange" date="31 August 22" tags="Science, Math"
+                  href="Categories/Demo_Category/0007/article.html"
+                  image="Categories/Demo_Category/0007/card.png">
+        Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor
+        nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+    </article-card>
 </div>
 
 
