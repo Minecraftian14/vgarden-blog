@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.block_content {
+    margin: 0 20% 0 20%;
+}
+
+.main_page_header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.main_page_header_title_bar {
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px){
+    .block_content {
+        margin: 0;
+    }
+}
