@@ -1,15 +1,13 @@
-const TEMPLATE = `
-    <article class="brick">
-        <div class="image"><img src="{0}" alt=""/></div>
+const ARTICLE_TEMPLATE = `
+    <img src="{0}"/>
+    <figcaption>
         <a href="{1}">
-            <div class="text">
-                <div class="date">{2}</div>
-                <div class="title"><h1>{3}</h1></div>
-                <div class="desc"><p>{4}</p></div>
-                <div class="tags">{5}</div>
-            </div>
+            <div class="date">{2}</div>
+            <div class="title"><h1>{3}</h1></div>
+            <div class="desc"><p>{4}</p></div>
+            <div class="tags">{5}</div>
         </a>
-    </article>
+    </figcaption>
 `;
 
 class ArticleCard extends HTMLElement {
@@ -62,13 +60,19 @@ class ArticleCard extends HTMLElement {
     constructor() {
         super();
 
-        this.innerHTML = String.format(TEMPLATE,
+        this.hidden = true;
+
+        let figure = document.createElement('figure');
+        figure.innerHTML = String.format(ARTICLE_TEMPLATE,
             this.getAttribute('image'),
             this.getAttribute('href'),
             this.getAttribute('date'),
             this.getAttribute('title'),
             this.innerHTML,
             this.getAttribute('tags'));
+        this.parentElement.appendChild(figure);
+
+        this.innerHTML = "";
     }
 }
 

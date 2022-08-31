@@ -1,52 +1,40 @@
-.article_bricks_container {
-    column-count: 4;
-    column-gap: 10px;
-    margin: 10px;
+figure {
+    padding: 0;
 }
 
-@media only screen and (max-width: 1200px) {
-    .article_bricks_container {
-        column-count: 1;
-    }
+figure img,
+figure figcaption {
+    display: block;
 }
 
-.article_bricks_container .brick {
-    margin: 0 0 10px 0;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    break-inside: avoid;
-}
-
-.article_bricks_container .brick a {
-    text-decoration: inherit;
-    color: inherit;
-}
-
-.article_bricks_container .brick .image img {
+figure img {
+    margin: 0;
     max-width: 100%;
     max-height: 100%;
 }
 
-.brick > .image {
-    grid-row: 1 / -1;
-    grid-column: 1;
+figure figcaption {
+    font-size: 16px;
+    padding: 10%;
 }
 
-.article_bricks_container .brick .text {
+figure figcaption a {
+    text-decoration: inherit;
+    color: inherit;
+    display: inline;
 }
 
-.article_bricks_container .brick .text .date {
-
+figure figcaption a .date {
+    color: #666;
+    font-size: 0.75em;
 }
 
-.article_bricks_container .brick .text .title {
-
+figure figcaption a .title {
 }
 
-.article_bricks_container .brick .text .desc {
-
+figure figcaption a .desc {
 }
 
-.article_bricks_container .brick .text .tags {
-
+figure figcaption a .tags {
+    margin-top: 10px;
 }

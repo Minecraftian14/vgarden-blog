@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/article_bricks.css">
-
-    <script defer src="js/strings.js"></script>
-    <script defer src="js/article_generator.js"></script>
 </head>
 <body>
 
@@ -26,7 +23,7 @@
     </div>
 </header>
 
-<div class="article_bricks_container">
+<div id="articles_box">
     <article-card title="Titles" date="31 August 22" tags="Science, Math"
                   href="Categories/Demo_Category/0001/article.html"
                   image="Categories/Demo_Category/0001/card.png">
@@ -71,14 +68,14 @@
     </article-card>
 </div>
 
-
-<h2>categories with articles:
-    <H2>
-
-        <ul>
-            <li><a href="Categories/math.html">math</a></li>
-            <li><a href="Categories/computer_science.html">computer science</a></li>
-        </ul>
-
+<script src="js/jquery.min.js"></script>
+<script src="js/boxify.min.js"></script>
+<script src="js/strings.js"></script>
+<script src="js/article_generator.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#articles_box').boxify();
+    });
+</script>
 </body>
 </html>
